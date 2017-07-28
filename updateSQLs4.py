@@ -10,7 +10,7 @@ data1 = [date.upper(),date.upper(),'OPTSTK']
 #eqFileName = 'C:\\Users\\KRISH\\Desktop\\Ananth shares\\goodinvestory\\foDATEbhav.csv'  
 #eqFileName = eqFileName.replace("DATE",date.upper())
 
-con = sqlite3.connect("sqlite3\\goodinvestory.db")
+con = sqlite3.connect("sqlite3/goodinvestory.db")
 
 #
 sql1 = ''' UPDATE options

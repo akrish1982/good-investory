@@ -1,13 +1,14 @@
-import csv, sqlite3
+import csv, sqlite3, os
 
 import datetime
 
 #date = datetime.datetime.now().strftime("%d%m%Y")
 
-eqFileName = 'C:\\Users\\KRISH\\Desktop\\Ananth shares\\goodinvestory\\volatility.csv'  
+eqFileName = os.path.join(os.path.expanduser('~'),'Desktop','Ananth shares','goodinvestory','Volatility.csv')
+
 #eqFileName = eqFileName.replace("DATE",date)
 
-con = sqlite3.connect("sqlite3\\goodinvestory.db")
+con = sqlite3.connect("sqlite3/goodinvestory.db")
 
 # TO CHECK IF THERE ARE ANY TABLES IN THE DATABASE
 #for row in con.execute("pragma table_info('sqlite_master')").fetchall():
